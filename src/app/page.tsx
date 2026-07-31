@@ -9,7 +9,6 @@ import {
   SectionHeading,
 } from "@/components/ui";
 import { featuredProjects } from "@/content/projects";
-import { stats } from "@/content/skills";
 import { audiences, site } from "@/content/site";
 import { experiences } from "@/content/experience";
 
@@ -67,23 +66,6 @@ function Hero() {
           </div>
         </Reveal>
 
-        <Reveal delay={320}>
-          <dl className="mt-16 grid grid-cols-2 gap-x-6 gap-y-8 border-t border-border pt-10 sm:grid-cols-4">
-            {stats.map((stat) => (
-              <div key={stat.label}>
-                <dt className="sr-only">{stat.label}</dt>
-                <dd>
-                  <span className="block font-mono text-3xl font-semibold tracking-tight text-accent">
-                    {stat.value}
-                  </span>
-                  <span className="mt-1.5 block text-sm leading-snug text-fg-muted">
-                    {stat.label}
-                  </span>
-                </dd>
-              </div>
-            ))}
-          </dl>
-        </Reveal>
       </div>
     </section>
   );

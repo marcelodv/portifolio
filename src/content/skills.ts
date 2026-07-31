@@ -73,11 +73,3 @@ export const skillGroups: SkillGroup[] = [
     ],
   },
 ];
-
-/** Números do topo da home. Devem ser verificáveis pelos cases. */
-export const stats = [
-  { value: "5+", label: "anos construindo produto" },
-  { value: "3", label: "anos de IBM" },
-  { value: "4", label: "produtos no ar" },
-  { value: "1h", label: "substituindo dias de teste manual" },
-];
